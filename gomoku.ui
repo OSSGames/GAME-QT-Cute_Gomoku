@@ -1,0 +1,297 @@
+<ui version="4.0" >
+ <class>gomokuClass</class>
+ <widget class="QWidget" name="gomokuClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>567</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>567</width>
+    <height>677</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Cute Gomoku</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>567</width>
+     <height>675</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" >
+    <property name="horizontalSpacing" >
+     <number>-1</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize" >
+       <size>
+        <width>140</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="title" >
+       <string>Player moves</string>
+      </property>
+      <widget class="QLabel" name="playersPiece" >
+       <property name="geometry" >
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>35</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>Piece</string>
+       </property>
+       <property name="margin" >
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QWidget" name="" >
+       <property name="geometry" >
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>65</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" >
+        <item>
+         <widget class="QRadioButton" name="firstButton" >
+          <property name="sizePolicy" >
+           <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text" >
+           <string>First</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="secondButton" >
+          <property name="sizePolicy" >
+           <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text" >
+           <string>Second</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1" >
+     <layout class="QVBoxLayout" >
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="rightMargin" >
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="backwardButton" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy" >
+           <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text" >
+           <string/>
+          </property>
+          <property name="icon" >
+           <iconset resource="images.qrc" >:/new/prefix1/lefta.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="forwardButton" >
+          <property name="enabled" >
+           <bool>false</bool>
+          </property>
+          <property name="icon" >
+           <iconset resource="images.qrc" >:/new/prefix1/righta.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clearButton" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="text" >
+           <string>Clear</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveButton" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="text" >
+           <string>Save</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="loadButton" >
+          <property name="enabled" >
+           <bool>true</bool>
+          </property>
+          <property name="text" >
+           <string>Load</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType" >
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>10</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="messageBox" >
+        <property name="maximumSize" >
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Message here</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="pbAIThinking" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy" >
+         <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="value" >
+         <number>100</number>
+        </property>
+        <property name="textVisible" >
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBoxCheatMode" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>410</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text" >
+         <string>Cheat Mode</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="2" >
+     <widget class="QLabel" name="gameBoard" >
+      <property name="minimumSize" >
+       <size>
+        <width>565</width>
+        <height>565</height>
+       </size>
+      </property>
+      <property name="maximumSize" >
+       <size>
+        <width>565</width>
+        <height>565</height>
+       </size>
+      </property>
+      <property name="text" >
+       <string/>
+      </property>
+      <property name="pixmap" >
+       <pixmap resource="images.qrc" >:/new/prefix1/gomokub.png</pixmap>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc" />
+ </resources>
+ <connections/>
+</ui>

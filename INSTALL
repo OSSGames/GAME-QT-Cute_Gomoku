@@ -1,0 +1,5 @@
+1. You need to have Qt4 installed to build this program.
+2. Move to the directory where you have extracted the files.
+3. run 'qmake cutegomoku.pro'.
+4. run 'make'.
+
